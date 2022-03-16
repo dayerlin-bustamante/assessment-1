@@ -16,6 +16,12 @@ html {
 
 /* HEADER */
 
+#headfixed {
+  width: 100%;
+  position: fixed;
+  background-color: white;
+}
+
 header {
   padding: 1rem;
 }
@@ -44,6 +50,9 @@ header > ul > li > button > img {
 
 /* MAIN */
 
+main {
+  padding-top: 5rem;
+}
 .head {
   padding: 1rem;
 }
@@ -387,6 +396,14 @@ footer > p {
 
   .center > ul {
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .center > ul > li > img {
+    width: 40px;
   }
 
   .center > img {
@@ -478,11 +495,22 @@ footer > p {
 }
 
 @media (min-width: 1025px) {
-  body {
-    padding: 2rem 5rem;
+  /* HEAD */
+
+  .head > h1 {
+    margin-right: 5rem;
   }
 
-  /* HEAD */
+  header > ul {
+    padding-left: 3rem;
+    padding-right: 2rem;
+  }
+
+  .head {
+    padding-top: 5rem;
+    padding-left: 10rem;
+    padding-right: 5rem;
+  }
   .head > h1 {
     font-size: 4rem;
   }
@@ -498,6 +526,11 @@ footer > p {
   }
 
   /* CENTER */
+
+  .center:not(ul > li) {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 
   .center > ul > li {
     padding-right: 5rem;
@@ -520,11 +553,28 @@ footer > p {
     margin-bottom: 10rem;
   }
 
+  /*  PLANS */
+
+  .plans {
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+
+  .plans > div:first-child {
+    padding-left: 5rem;
+  }
+
+  .plans > div:nth-child(2) {
+    padding-left: 5rem;
+    padding-right: 2rem;
+  }
+
   /* BOOKSTORE */
 
   .bookstore {
     display: flex;
     width: 100%;
+    padding-left: 5rem;
   }
 
   .bookstore > div:nth-child(3) {
@@ -533,17 +583,48 @@ footer > p {
 
   /* NEWS */
 
+  #firstnews {
+    padding: 2rem 5rem;
+    padding-left: 10rem;
+  }
+
   .news {
     width: 100%;
   }
 
   .news > article:not(#firstnews) {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+
+  .us {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .us > h1 {
+    width: 300px;
+  }
+
+  .us > p {
+    width: 400px;
+    height: 200px;
+  }
+
+  .us > button {
+    width: 200px;
+    height: 40px;
+    margin: 0;
   }
 
   footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
     width: 100%;
+    padding-left: 2rem;
   }
 }
