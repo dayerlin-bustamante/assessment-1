@@ -1,0 +1,549 @@
+@font-face {
+  font-family: 'NuovaVolte';
+  src: url('../fonts/NuovaVolte-Regular.woff2');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: 'NuovaVolte';
+}
+
+/* HEADER */
+
+header {
+  padding: 1rem;
+}
+
+header > ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+header > ul > li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+header > ul > li > a:link,
+a:visited,
+a:active {
+  color: black;
+  text-decoration: none;
+}
+
+header > ul > li > button > img {
+  width: 30px;
+}
+
+/* MAIN */
+
+.head {
+  padding: 1rem;
+}
+
+.head > h1 {
+  font-size: 3.2rem;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+}
+
+.head > p {
+  color: rgb(129, 129, 129);
+  padding-bottom: 3rem;
+}
+
+.head > button:first-of-type {
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  border: solid 1px blue;
+  border-radius: 2px;
+  padding: 10px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.head > button:nth-of-type(2) {
+  background-color: white;
+  color: blue;
+  border: solid 1px blue;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+.center {
+  padding: 1rem;
+}
+
+.center > ul {
+  border-top: solid 0.5px gray;
+  border-bottom: solid 0.5px gray;
+  margin-bottom: 1rem;
+  padding-left: 1rem;
+}
+
+.center > ul > li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.center > ul > li > img {
+  width: 10px;
+}
+
+.center > img {
+  width: 322px;
+}
+
+.center > h3 {
+  color: blue;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.center > h1 {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.center > p {
+  color: rgb(129, 129, 129);
+  padding-bottom: 2rem;
+}
+
+.center > p > strong {
+  color: black;
+}
+
+.center > button:first-of-type {
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  border: solid 1px blue;
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}
+
+.center > button:nth-of-type(2) {
+  background-color: white;
+  color: blue;
+  border: solid 1px blue;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+/* BOOCKSTORE */
+
+.bookstore {
+  margin-top: 2rem;
+  padding: 4rem 1rem 2rem 1rem;
+  background-color: rgba(236, 236, 236, 0.493);
+}
+
+#past {
+  font-size: 2.5rem;
+  padding-bottom: 1rem;
+}
+
+.bookstore > div > img {
+  width: 322px;
+}
+
+.bookstore > div > h1 {
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.bookstore > div > h3 {
+  color: blue;
+  padding-top: 2rem;
+}
+
+.bookstore > div > p {
+  color: rgb(129, 129, 129);
+  padding-bottom: 2rem;
+}
+
+.bookstore > div > button:first-of-type {
+  font-weight: bold;
+  background-color: #0000ff;
+  color: white;
+  border: solid 1px blue;
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.bookstore > div > button:nth-of-type(2) {
+  background-color: white;
+  color: blue;
+  border: solid 1px blue;
+  border-radius: 2px;
+  padding: 10px 15px;
+}
+
+#space {
+  padding: 3rem;
+}
+
+/* PLANS */
+
+.plans > div:first-child {
+  background-color: blue;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.plans > div:nth-child(2) {
+  background-color: black;
+  color: white;
+  padding: 3rem 2rem;
+}
+
+.plans > div > h1 {
+  padding-bottom: 1rem;
+  font-size: 2rem;
+}
+
+.plans > div > p {
+  line-height: 2;
+  padding-bottom: 1rem;
+}
+
+.plans > div > h2 {
+  padding-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.plans > div > ul {
+  padding-bottom: 2rem;
+}
+
+.plans > div > ul > li {
+  list-style-type: none;
+  line-height: 2;
+}
+
+.plans > div > ul > li > img {
+  width: 20px;
+  padding-right: 5px;
+}
+
+.plans > div:first-child > button:first-of-type {
+  font-weight: bold;
+  background-color: white;
+  color: blue;
+  border: solid 1px white;
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.plans > div:nth-child(2) > button:first-of-type {
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  border: solid 1px white;
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+.plans > div:first-child > button:nth-of-type(2) {
+  font-weight: bold;
+  background-color: blue;
+  color: white;
+  border: solid 1px white;
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
+}
+.plans > div:nth-child(2) > button:nth-of-type(2) {
+  font-weight: bold;
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-right: 1rem;
+  margin-bottom: 2.5rem;
+}
+
+/* NEWS */
+.news {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.news > article > img {
+  width: 322px;
+}
+.news > article > h1 {
+  padding: 2rem 0rem;
+  font-size: 2rem;
+}
+
+.news > article > button > img {
+  width: 20px;
+}
+
+.news > article > button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  color: black;
+  border: solid 1px grey;
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-left: 2rem;
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.news > article > h3 {
+  color: blue;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-size: 1rem;
+  font-weight: normal;
+}
+
+.news > article > p {
+  color: rgb(129, 129, 129);
+  padding-bottom: 2rem;
+}
+
+/* US */
+
+.us {
+  padding: 7rem 1rem 7rem 1rem;
+  background-color: rgba(236, 236, 236, 0.493);
+}
+
+.us > h1 {
+  padding-bottom: 2rem;
+}
+
+.us > p {
+  color: rgb(129, 129, 129);
+  line-height: 2;
+  padding-bottom: 2rem;
+}
+
+.us > button {
+  background-color: rgba(236, 236, 236, 0.493);
+  color: black;
+  border: solid 1px rgba(128, 128, 128, 0.61);
+  border-radius: 2px;
+  padding: 10px 18px;
+  margin-left: 2rem;
+}
+
+/* FOOTER */
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(236, 236, 236, 0.493);
+  border-top: solid 1px rgba(128, 128, 128, 0.397);
+  padding: 1rem;
+}
+
+footer > p {
+  padding-left: 10px;
+  font-size: 1rem;
+  color: grey;
+}
+
+@media (min-width: 765px) {
+  html {
+    font-size: 20px;
+    font-family: 'NuovaVolte';
+  }
+
+  .center {
+    width: 100%;
+  }
+
+  .center > ul {
+    padding: 1rem;
+  }
+
+  .center > img {
+    float: left;
+    margin-right: 1rem;
+    width: 300px;
+    margin-top: 8rem;
+  }
+
+  .center > h1 {
+    font-size: 2rem;
+  }
+
+  .center > h3 {
+    padding-top: 4rem;
+    font-weight: normal;
+  }
+
+  .center > button {
+    margin-bottom: 5rem;
+  }
+
+  /* BOOKSTORE */
+
+  .bookstore {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .bookstore > div:nth-child(2) {
+    padding-top: 5.1em;
+  }
+
+  /* PLANS */
+
+  .plans {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .plans > div:first-child {
+    margin-right: 10px;
+  }
+
+  /* NEWS */
+
+  .news {
+    display: grid;
+    grid-template-areas:
+      'uno uno'
+      'dos tres'
+      'cuatro cinco';
+  }
+
+  .news > article {
+    padding: 1rem;
+  }
+
+  #firstnews {
+    grid-area: uno;
+  }
+
+  #firstnews > img {
+    height: 250px;
+    width: 700px;
+  }
+
+  .news > article:nth-child(2) {
+    grid-area: dos;
+  }
+
+  .news > article:nth-child(3) {
+    grid-area: tres;
+  }
+
+  .news > article:nth-child(4) {
+    grid-area: cuatro;
+  }
+  .news > article:nth-child(2) {
+    grid-area: cinco;
+  }
+
+  .us > h1 {
+    font-size: 1.6rem;
+  }
+  .us > button {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  body {
+    padding: 2rem 5rem;
+  }
+
+  /* HEAD */
+  .head > h1 {
+    font-size: 4rem;
+  }
+
+  .head > button:nth-of-type(1) {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .head > button:nth-of-type(2) {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  /* CENTER */
+
+  .center > ul > li {
+    padding-right: 5rem;
+    text-align: center;
+  }
+  .center > img {
+    width: 400px;
+    margin-right: 8rem;
+  }
+
+  .center > h3 {
+    padding-top: 10rem;
+  }
+
+  .center > button {
+    font-size: 1rem;
+  }
+
+  .center > button:nth-of-type(2) {
+    margin-bottom: 10rem;
+  }
+
+  /* BOOKSTORE */
+
+  .bookstore {
+    display: flex;
+    width: 100%;
+  }
+
+  .bookstore > div:nth-child(3) {
+    padding-top: 5.1rem;
+  }
+
+  /* NEWS */
+
+  .news {
+    width: 100%;
+  }
+
+  .news > article:not(#firstnews) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  footer {
+    width: 100%;
+  }
+}
